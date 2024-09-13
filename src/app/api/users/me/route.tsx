@@ -1,8 +1,5 @@
-import { connectDB } from "@/dbConfig/dbConfig";
 import User from "@/models/userModel";
 import { NextRequest, NextResponse } from "next/server";
-import bcryptjs from "bcryptjs";
-import jwt from "jsonwebtoken";
 import { getDataFromToken } from "@/helpers/getDataFromToken";
 
 export async function GET(request: NextRequest) {
